@@ -1,17 +1,16 @@
-.photo_template {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 400px;
+
+.header-tabs {
+  background-color: gray;
+  padding: 8px;
 }
-.bar_top {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #1e3a8a;
-  color: white;
-  padding: 1rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  z-index: 999;
+
+.custom-tab1 {
+  color: green !important;
+}
+
+.custom-tab2 {
+  color: red !important;
+}
+.custom-tab3 {
+  color: blue !important;
 }

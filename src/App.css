@@ -4,6 +4,10 @@
   padding: 8px;
 }
 
+.custom-tab {
+  color: purple !important;
+}
+
 .custom-tab1 {
   color: green !important;
 }

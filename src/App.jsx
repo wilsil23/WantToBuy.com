@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import templatePhoto from './assets/download.jpg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Tabs from '@mui/material/Tabs';
@@ -11,11 +10,20 @@ import { Link } from 'react-router-dom';
 function App() {
   return (
     <div>
+      <Title />
       <HeaderTabs />
       <MyRoutes />
     </div>
   )
 }
+
+const Title = () => {
+  return (
+    <header className="title">
+      <h1>WantToBuy.com</h1>
+    </header>
+  );
+};
 
 function HeaderTabs() {
   const [value, setValue] = useState(0);

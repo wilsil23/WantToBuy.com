@@ -1,20 +1,32 @@
 
 .header-tabs {
-  background-color: gray;
+  background-color: white;
+  border-style: solid;
+  border-color: black;
   padding: 8px;
 }
 
 .custom-tab {
-  color: purple !important;
+  color: black !important;
 }
 
 .custom-tab1 {
-  color: green !important;
+  color: black !important;
 }
 
 .custom-tab2 {
-  color: red !important;
+  color: black !important;
 }
 .custom-tab3 {
-  color: blue !important;
+  color: black !important;
+}
+
+.title {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: black;
+  padding: 1rem 2rem;
+  z-index: 1000;
 }

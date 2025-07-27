@@ -39,6 +39,7 @@ function HeaderTabs() {
           <Tab label="Buy" component={Link} to="/Buy" className="custom-tab1"/>
           <Tab label="Sell" component={Link} to="/Sell" className="custom-tab2"/>
           <Tab label="Profile" component={Link} to="/Profile" className="custom-tab3"/>
+          <Tab label="Login" component={Link} to="/Login" className="custom-tab4"/>
       </Tabs>
     </div>
   );

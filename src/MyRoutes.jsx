@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage';
 import BuyPage from './pages/BuyPage';
 import SellPage from './pages/SellPage';
 import ProfilePage from './pages/ProfilePage';
+import LoginPage from './pages/LoginPage';
 
 function MyRoutes() {
   return (
@@ -12,6 +13,7 @@ function MyRoutes() {
       <Route path="/Buy" element={<BuyPage />} />
       <Route path="/Sell" element={<SellPage />} />
       <Route path="/Profile" element={<ProfilePage />} />
+      <Route path="/Login" element={<LoginPage />} />
       {/* Add more routes as needed */}
     </Routes>
   );

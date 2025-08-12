@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 
-function Login() {
+function Register() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [message, setMessage] = useState('');
 
-  const handleLogin = async (e) => {
+  const handleRegister = async (e) => {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:5000/login', {
+      const response = await fetch('http://localhost:5000/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password }),
@@ -18,12 +18,11 @@ function Login() {
       const data = await response.json();
 
       if (response.ok) {
-        setMessage('Login successful!');
-        localStorage.setItem('token', data.token);  // Save JWT token for auth
+        setMessage('Registration successful! You can now log in.');
         setUsername('');
         setPassword('');
       } else {
-        setMessage(data.message || 'Login failed');
+        setMessage(data.message || 'Registration failed');
       }
     } catch (err) {
       setMessage('Error connecting to server');
@@ -31,8 +30,8 @@ function Login() {
   };
 
   return (
-    <form onSubmit={handleLogin}>
-      <h2>Login</h2>
+    <form onSubmit={handleRegister}>
+      <h2>Register</h2>
       <input
         type="text"
         placeholder="Username"
@@ -47,10 +46,10 @@ function Login() {
         onChange={e => setPassword(e.target.value)}
         required
       />
-      <button type="submit">Login</button>
+      <button type="submit">Register</button>
       <p>{message}</p>
     </form>
   );
 }
 
-export default Login;
+export default Register;
